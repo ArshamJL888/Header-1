@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-color: red;
+    width: 100%;
+    height: 90vh;
+}
+
+.header-text {
+    position: absolute;
+    z-index: 999;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 40%;
+    right: 42%;
+    letter-spacing: 2.5px;
+    background: linear-gradient(to right, #202020 45%, #CAC8C8 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90vh;
+}
+
+.left-header {
+    background-color: green;
+    grid-column: 1/4;
+    background-image: url('../media/header.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.right-header {
+    background-color: #222121;
+    grid-column: 4/7;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    color: #FFFFFF;
+}
+
+.welcome {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+}
+
+.paragraph {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+}
+
+.btn {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-color: rgb(44, 44, 252);
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    align-self: center;
+    padding: 9px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(44, 44, 252);
+}
